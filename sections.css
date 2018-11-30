@@ -6,6 +6,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    border-bottom: solid 1px transparent
 
 }
 
@@ -85,7 +86,13 @@ nav.header-nav ul.main-menu > li.menu-item a {
     padding: 10px 20px;
     color: #fff;
     display: inline-block;
+    transition: 0.2s;
+    position: relative;
     
+}
+
+nav.header-nav ul.main-menu > li.current-menu-item a {
+    font-weight: 600;
 }
 
 @media(max-width: 959px) {
@@ -142,6 +149,34 @@ nav.header-nav ul.main-menu > li.menu-item a {
         animation-fill-mode: forwards;
     }
 
+}
+@media(min-width: 960px) {
+    nav.header-nav ul.main-menu > li.menu-item a:hover,
+    nav.header-nav ul.main-menu > li.current-menu-item a {
+        transform: translateY(-7px);
+    }
+    
+    nav.header-nav ul.main-menu > li.menu-item a::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        height: 1px;
+        width: 0%;
+        background: #ffffffdd;
+        transition: 0.2s;
+    }
+    
+    nav.header-nav ul.main-menu > li.menu-item a:hover:after,
+    nav.header-nav ul.main-menu > li.current-menu-item a::after {
+        left: 25%;
+        width: 50%;
+    }
+    
+    
+    
+    
+    
 }
 
 /*    BRUDNOPIS    */
