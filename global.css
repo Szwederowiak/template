@@ -1,0 +1,18 @@
+:root {
+    font-size: 16px;
+    
+    --font-primary: 'Proza Libre';
+    --font-secondary: 'Cormorant';
+    
+    --text-color: #262626;
+    --link-color: #464646;
+    
+    --color-1: #FBE8A6;
+    --color-2: #F4976C;
+    --color-3: #0b91ce;
+    --color-4: #B4DFE5;
+    --color-5: #D2FDFF;
+}
+
+body {margin: 0}
+.no-padding {padding: 0 !important}
