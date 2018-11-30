@@ -129,6 +129,10 @@ nav.header-nav ul.main-menu > li.current-menu-item a {
         width: 100%;
     }
     
+    nav.header-nav ul.main-menu > li.menu-item > a:active {
+        background: #ffffff22
+    }
+    
     nav.header-nav li.menu-item:nth-child(2n) {
         animation: fadeOutLeft .8s;
         animation-fill-mode: forwards;
