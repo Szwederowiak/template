@@ -1,0 +1,51 @@
+<html>
+<head>
+	<title></title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="style.css" type="text/css" rel="stylesheet"/>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+
+</head>
+<body>
+<header>
+	<div class="container">
+		<div class="header-top">
+			<div class="header-logo-image">
+				<img src="https://s19.postimg.cc/t5ht8it9v/Wikileaks_logo_text_wordmark.png" alt="logo"></div>
+			<div class="header-menu-button">
+				<button id="toggleMenuButton">
+					<i class="fas fa-bars"></i>
+				</button>
+			</div>
+		</div>
+	
+	<nav id="headerMenu">
+		<ul class="main-menu">
+			<li class="menu-item"><a href="#">About</a></li>
+			<li class="menu-item"><a href="#">Products</a></li>
+			<li class="menu-item"><a href="#">Pricing</a></li>
+			<li class="menu-item"><a href="#">References</a></li>
+			<li class="menu-item"><a href="#">Contact us</a></li>
+		</ul>
+	</nav>
+	</div>
+
+
+</header>
+
+<script type="text/javascript">
+	document.getElementById("toggleMenuButton").addEventListener("click", function () {
+		document.getElementById("headerMenu").classList.toggle("toggleMenu")
+		document.getElementById("toggleMenuButton").classList.toggle("clicked")
+
+	})
+
+</script>
+</body>
+</html>
