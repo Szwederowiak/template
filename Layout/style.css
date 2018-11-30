@@ -11,6 +11,9 @@
 header .container {
 	padding: 0 !important;
 	margin: 0 !important;
+	width: 400px;
+	margin: 0 auto;
+	overflow: hidden;
 }
 
 .header-top {
