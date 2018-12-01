@@ -16,10 +16,9 @@
 
 
     <link rel="stylesheet" type="text/css" href="addons/slick/slick.css" />
-    <!--    <link rel="stylesheet" type="text/css" href="addons/slick/slick-theme.css" />-->
 </head>
 
-<body>
+<body> 
    
 <!-- ==== ==== HEADER SECTION ==== ==== -->
     <header>
@@ -43,23 +42,103 @@
     </header>
 <!-- ==== ==== END OF HEADER SECTION ==== ==== -->
    
-    <section class="header-slide">
-
+    <section class="header-slider">
+        <div class="slides-container">
+            <div class="silder-item">
+                <div class="container-fluid nopadding">
+                    <div class="row">
+                        <div class="col-md-6 slide-left">
+                            asd
+                        </div>                        
+                        <div class="col-md-6 slide-right">
+                            <img src="img/jpg/s1.jpg" alt="s1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="silder-item">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 slide-left">
+                            <img src="img/jpg/s2.jpg" alt="s1">
+                        </div>                        
+                        <div class="col-md-6 slide-right">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
     <script type="text/javascript" src="addons/slick/slick.min.js"></script>
 
     <script type="text/javascript">
-        document.getElementById("toggleMenuButton").addEventListener(
-            "click",
-            function() {
+//        MOBILE NAV BUTTON
+        document.getElementById("toggleMenuButton").addEventListener("click", function() {
                 document.getElementById("mainNav").classList.toggle("toggleMenu");
                 document.getElementById("toggleMenuButton").classList.toggle("fa-bars");
                 document.getElementById("toggleMenuButton").classList.toggle("fa-times");
 
             })
+//        END OF MOBILE NAV BUTTON
+        
+//        SLICK SLIDER SETTINGS
+        $(document).ready(function(){
+            $('.slides-container').slick({
+                autoplay: true
+            });
+        });
+        
+        
     </script>
 </body>
 </html>
