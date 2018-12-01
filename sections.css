@@ -180,7 +180,7 @@ nav.header-nav ul.main-menu > li.current-menu-item a {
 }
 
 /*    SLIDER    */
-header {pointer-events: none;}
+//header {pointer-events: none;}
 section.header-slider {
     height: 100vh;
 
