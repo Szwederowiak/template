@@ -205,7 +205,7 @@ section.header-slider .slides-container {
     transition: 0.25s;
     z-index: 123;
 }
-.header-slider .slick-arrow:focus,
+
 .header-slider .slick-next:hover {
     background: #ffffff55
 }
