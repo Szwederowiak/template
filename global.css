@@ -19,6 +19,31 @@
     
     --color-5: #D2FDFF;
 }
+
+@media (min-width: 960px) {
+    :root {
+        font-size: 15px;
+    }
+}
+
+
 *:focus {outline: 0;}
 body {margin: 0}
 .no-padding {padding: 0 !important}
+
+/* ==== BUTTONS ==== */
+a.button-primary {
+    display: inline-block;
+    background: var(--color-4);
+    padding: 15px 35px;
+    color: #161616;
+    box-shadow: 0 15px 40px -20px;
+    transition: 0.2s;
+    margin-top: 20px
+}
+
+a.button-primary:hover {
+    letter-spacing: 1px;
+    transform: translateY(-5px);
+    box-shadow: 0 25px 40px -20px;
+}
